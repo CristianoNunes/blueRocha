@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://apps.beelegal.com.br/rocha/",
+  baseURL: process.env.REACT_APP_URL,
 });
 
 const authentication = (username, password) =>
